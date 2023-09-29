@@ -22,7 +22,6 @@ public class OrderResource {
 	
 	@GetMapping
 	public ResponseEntity<List<Order>> faindAll(){
-		Order u = new Order();
 		List<Order> list = service.findAll();
 		return ResponseEntity.ok().body(list);
 	}
